@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#790078">
+<meta name="description" content="Copiadora Amazonas: gráfica rápida, impressão de documentos, banners, fachadas comerciais, adesivos personalizados e comunicação visual. Solicite seu orçamento!">
+<title>Copiadora Amazonas | Gráfica e Comunicação Visual</title>
+<style>
+:root{--roxo:#790078;--escuro:#3E105B;--magenta:#D52A9D;--azul:#20B9C6;--amarelo:#FFC329;--cinza:#F7F4F8;--texto:#39313F}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--texto);line-height:1.6}
+a{text-decoration:none}.container{width:90%;max-width:1200px;margin:auto}
+header{background:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 3px 18px #00000014}
+.navbar{min-height:88px;display:flex;align-items:center;justify-content:space-between}
+.logo{width:190px;height:75px;object-fit:contain}
+.menu{display:flex;align-items:center;gap:22px}
+.menu a{color:var(--escuro);font-size:14px;font-weight:bold;transition:.3s}
+.menu a:hover{color:var(--magenta)}
+.menu .btn-menu{background:var(--amarelo);padding:13px 20px;border-radius:30px}
+.menu-toggle{display:none;border:0;background:none;font-size:30px;color:var(--roxo);cursor:pointer}
+.btn{display:inline-block;padding:15px 27px;border-radius:30px;background:var(--amarelo);color:var(--escuro);font-weight:bold;transition:.3s;border:0;cursor:pointer}
+.btn:hover{background:var(--magenta);color:white;transform:translateY(-3px)}
+.btn-outline{display:inline-block;padding:13px 25px;border:2px solid white;border-radius:30px;color:white;font-weight:bold}
+.hero{min-height:590px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(62,16,91,.18),rgba(62,16,91,0)),url("banner-amazonas.png") center/cover no-repeat;color:white}
+.hero-content{max-width:650px;padding:80px 0}
+.hero-tag{display:inline-block;padding:9px 17px;background:var(--azul);color:white;border-radius:30px;font-size:12px;font-weight:bold;letter-spacing:1px;margin-bottom:25px}
+.hero h1{font-size:clamp(38px,5vw,62px);line-height:1.12;margin-bottom:25px;font-weight:800}
+.hero h1 span{color:var(--amarelo)}.hero p{font-size:18px;line-height:1.8;margin-bottom:30px;color:white}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:15px}
+.diferenciais{background:var(--cinza);padding:30px 0}
+.diferenciais-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;text-align:center}
+.diferencial strong{display:block;color:var(--roxo);font-size:17px;margin-bottom:5px}
+.diferencial p{color:#777;font-size:14px}
+section{padding:85px 0}.section-title{text-align:center;margin-bottom:50px}
+.section-title span{color:var(--magenta);font-size:13px;font-weight:bold;text-transform:uppercase;letter-spacing:2px}
+.section-title h2{color:var(--escuro);font-size:36px;margin-top:10px;line-height:1.2}
+.section-title p{color:#777;margin-top:15px}
+.sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.sobre-img{min-height:390px;border-radius:20px;background:url("https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?auto=format&fit=crop&w=1000&q=85") center/cover}
+.sobre-text h2{font-size:35px;color:var(--roxo);line-height:1.2;margin-bottom:22px}
+.sobre-text p{color:#69616F;line-height:1.9;margin-bottom:18px}
+.servicos{background:var(--cinza)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.card{background:white;padding:32px 27px;border-radius:17px;box-shadow:0 5px 25px #3714460f;border-bottom:4px solid transparent;transition:.3s}
+.card:hover{transform:translateY(-7px);border-bottom-color:var(--magenta)}
+.card-icon{width:62px;height:62px;display:flex;align-items:center;justify-content:center;background:#F5E4F4;border-radius:15px;font-size:30px;margin-bottom:22px}
+.card h3{color:var(--roxo);font-size:20px;margin-bottom:13px}
+.card p{color:#777;font-size:14px;line-height:1.8;margin-bottom:18px}
+.card a{color:var(--magenta);font-weight:bold;font-size:14px}
+.visual{background:linear-gradient(120deg,var(--escuro),var(--roxo))}
+.visual .section-title h2{color:white}.visual .section-title p{color:#E9DDED}.visual .section-title span{color:var(--amarelo)}
+.chamada{background:linear-gradient(110deg,var(--magenta),var(--roxo));color:white;text-align:center}
+.chamada h2{font-size:35px;margin-bottom:15px}.chamada p{margin-bottom:25px}
+.orcamento{background:var(--cinza)}
+.form-box{max-width:750px;margin:auto;background:white;padding:40px;border-radius:20px;box-shadow:0 8px 30px #0000000f}
+.form-box input,.form-box select,.form-box textarea{width:100%;padding:15px;margin-bottom:17px;border:1px solid #ddd;border-radius:9px;font-size:15px;font-family:inherit;outline:none}
+.form-box input:focus,.form-box select:focus,.form-box textarea:focus{border-color:var(--magenta)}
+.form-box textarea{min-height:130px;resize:vertical}.form-box button{width:100%;font-size:16px}
+.form-aviso{color:#777;font-size:12px;margin-top:12px;text-align:center}
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
+.contato-info h3{color:var(--roxo);font-size:26px;margin-bottom:25px}
+.contato-info p{color:#666;margin-bottom:22px;line-height:1.8}.contato-info strong{color:var(--roxo)}
+.mapa{background:#F2E8F4;border-radius:17px;min-height:300px;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;color:var(--roxo)}
+footer{background:#281039;color:white;padding:55px 0 20px}
+.footer-content{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-logo{width:175px;height:90px;object-fit:contain;background:white;border-radius:10px}
+.footer-content p{color:#D5C9DC;line-height:1.8;margin-top:15px;max-width:360px}
+.footer-links h3{color:var(--amarelo);margin-bottom:18px}
+.footer-links a{display:block;color:#E8DDEC;margin-bottom:12px;font-size:14px}
+.footer-links a:hover{color:var(--amarelo)}
+.footer-bottom{border-top:1px solid #60416C;padding-top:22px;text-align:center;color:#C9B8D0;font-size:13px}
+.whatsapp{position:fixed;bottom:25px;right:25px;width:62px;height:62px;background:#25D366;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:9999;box-shadow:0 5px 20px #0004;transition:.3s}
+.whatsapp:hover{transform:scale(1.1)}.whatsapp svg{width:32px;height:32px;fill:white}
+@media(max-width:950px){.menu{gap:14px}.menu a{font-size:12px}.logo{width:155px}.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){
+.navbar{min-height:78px}.menu-toggle{display:block}
+.menu{display:none;position:absolute;top:78px;left:0;width:100%;background:white;padding:25px;flex-direction:column;align-items:center;gap:22px;box-shadow:0 10px 20px #0000001a}
+.menu.active{display:flex}.menu a{font-size:15px}
+.hero{min-height:550px;background-position:62% center}.hero-content{max-width:520px;padding:60px 0}
+.hero h1{font-size:40px}.hero p{font-size:16px}
+.sobre-grid,.contato-grid{grid-template-columns:1fr}
+.footer-content{grid-template-columns:1fr 1fr}.footer-content>div:first-child{grid-column:1/-1}
+}
+@media(max-width:550px){
+.hero{min-height:570px;background-position:65% center}.hero h1{font-size:36px}.hero p{font-size:15px}
+.hero-buttons{flex-direction:column;align-items:flex-start}
+.diferenciais-grid,.cards,.footer-content{grid-template-columns:1fr}
+.footer-content>div:first-child{grid-column:auto}
+section{padding:65px 0}
+.section-title h2,.sobre-text h2,.chamada h2{font-size:28px}
+.sobre-img{min-height:270px}.form-box{padding:25px 18px}
+.whatsapp{width:56px;height:56px;bottom:18px;right:18px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container navbar">
+<a href="#inicio"><img src="logo.jpg" class="logo" alt="Logo Copiadora Amazonas"></a>
+<button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu" aria-expanded="false">☰</button>
+<nav class="menu" id="menu">
+<a href="#inicio" onclick="closeMenu()">Início</a>
+<a href="#sobre" onclick="closeMenu()">Quem somos</a>
+<a href="#grafica" onclick="closeMenu()">Gráfica e copiadora</a>
+<a href="#visual" onclick="closeMenu()">Comunicação visual</a>
+<a href="#contato" onclick="closeMenu()">Contato</a>
+<a href="#orcamento" class="btn-menu" onclick="closeMenu()">Solicitar orçamento</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="container">
+<div class="hero-content">
+<span class="hero-tag">GRÁFICA RÁPIDA | COPIADORA | COMUNICAÇÃO VISUAL</span>
+<h1>Sua ideia ganha forma. <span>Sua marca ganha destaque!</span></h1>
+<p>Soluções em impressão, serviços gráficos e comunicação visual para transformar suas ideias em realidade. Tudo para sua empresa ou projeto em um só lugar!</p>
+<div class="hero-buttons">
+<a href="#orcamento" class="btn">Solicitar orçamento</a>
+<a href="#grafica" class="btn-outline">Conheça nossos serviços</a>
+</div>
+</div>
+</div>
+</section>
+
+<div class="diferenciais">
+<div class="container diferenciais-grid">
+<div class="diferencial"><strong>✦ Qualidade</strong><p>Materiais gráficos com excelente apresentação.</p></div>
+<div class="diferencial"><strong>✦ Praticidade</strong><p>Facilidade para solicitar seu orçamento.</p></div>
+<div class="diferencial"><strong>✦ Variedade</strong><p>Soluções em impressão e comunicação visual.</p></div>
+</div>
+</div>
+
+<section id="sobre">
+<div class="container sobre-grid">
+<div class="sobre-img" role="img" aria-label="Ambiente de produção gráfica"></div>
+<div class="sobre-text">
+<span class="hero-tag">CONHEÇA A EMPRESA</span>
+<h2>Bem-vindo à Copiadora Amazonas!</h2>
+<p>Somos uma empresa especializada em gráfica rápida, copiadora e comunicação visual, oferecendo soluções para diferentes necessidades de impressão e divulgação.</p>
+<p>Trabalhamos com impressão de documentos, banners, fachadas comerciais, adesivos personalizados e diversos serviços gráficos.</p>
+<p>Nosso objetivo é transformar suas ideias em materiais que comuniquem, divulguem e valorizem sua marca.</p>
+<a href="#orcamento" class="btn">Fale com nossa equipe</a>
+</div>
+</div>
+</section>
+
+<section class="servicos" id="grafica">
+<div class="container">
+<div class="section-title"><span>Nossos serviços</span><h2>Gráfica rápida e copiadora</h2><p>Soluções de impressão para pessoas, profissionais e empresas.</p></div>
+<div class="cards">
+<div class="card"><div class="card-icon">🖨️</div><h3>Impressão de documentos</h3><p>Impressões coloridas e preto e branco, documentos, arquivos digitais e materiais de uso profissional e pessoal.</p><a href="#orcamento">Solicitar orçamento →</a></div>
+<div class="card"><div class="card-icon">📄</div><h3>Cópias e Xerox</h3><p>Reprodução de documentos e materiais impressos para suas necessidades.</p><a href="#orcamento">Solicitar orçamento →</a></div>
+<div class="card"><div class="card-icon">📚</div><h3>Encadernação</h3><p>Organização e acabamento de apostilas, documentos e trabalhos acadêmicos.</p><a href="#orcamento">Solicitar orçamento →</a></div>
+<div class="card"><div class="card-icon">💳</div><h3>Cartões de visita</h3><p>Materiais personalizados para apresentar sua marca e seus contatos profissionais.</p><a href="#orcamento">Solicitar orçamento →</a></div>
+<div class="card"><div class="card-icon">📃</div><h3>Panfletos e flyers</h3><p>Materiais impressos para divulgação de empresas, produtos, serviços e promoções.</p><a href="#orcamento">Solicitar orçamento →</a></div>
+<div class="card"><div class="card-icon">📋</div><h3>Plastificação</h3><p>Proteção e acabamento para documentos e materiais impressos.</p><a href="#orcamento">Solicitar orçamento →</a></div>
+</div>
+</div>
+</section>
+
+<section class="visual" id="visual">
+<div class="container">
+<div class="section-title"><span>Valorize sua marca</span><h2>Comunicação visual</h2><p>Destaque sua empresa com soluções visuais que chamam a atenção e fortalecem sua marca.</p></div>
+<div class="cards">
+<div class="card"><div class="card-icon">🏢</div><h3>Fachadas comerciais</h3><p>Soluções visuais para destacar seu estabelecimento e valorizar a identidade da sua empresa.</p><a href="#orcamento">Fazer orçamento →</a></div>
+<div class="card"><div class="card-icon">🎯</div><h3>Banners e faixas</h3><p>Impressões para eventos, campanhas, divulgação de produtos e promoções.</p><a href="#orcamento">Fazer orçamento →</a></div>
+<div class="card"><div class="card-icon">✨</div><h3>Adesivos personalizados</h3><p>Adesivos para divulgação, identificação e personalização de ambientes.</p><a href="#orcamento">Fazer orçamento →</a></div>
+<div class="card"><div class="card-icon">🚘</div><h3>Adesivação</h3><p>Soluções de adesivação para vitrines, veículos e espaços comerciais.</p><a href="#orcamento">Fazer orçamento →</a></div>
+<div class="card"><div class="card-icon">🪧</div><h3>Placas e letreiros</h3><p>Materiais de identificação e sinalização para estabelecimentos comerciais.</p><a href="#orcamento">Fazer orçamento →</a></div>
+<div class="card"><div class="card-icon">🎨</div><h3>Projetos de comunicação visual</h3><p>Materiais e soluções personalizadas para divulgar e valorizar a identidade da sua marca.</p><a href="#orcamento">Fazer orçamento →</a></div>
+</div>
+</div>
+</section>
+
+<section class="chamada">
+<div class="container">
+<h2>Sua empresa merece ser vista!</h2>
+<p>Invista em comunicação visual e materiais gráficos que valorizam sua marca.</p>
+<a href="#orcamento" class="btn">Solicite seu orçamento</a>
+</div>
+</section>
+
+<section class="orcamento" id="orcamento">
+<div class="container">
+<div class="section-title"><span>Atendimento personalizado</span><h2>Solicite seu orçamento</h2><p>Preencha as informações abaixo e envie sua solicitação diretamente pelo WhatsApp.</p></div>
+<div class="form-box">
+<form id="formOrcamento">
+<input type="text" id="nome" placeholder="Seu nome completo" required>
+<input type="tel" id="telefone" placeholder="Seu telefone / WhatsApp" required>
+<select id="servico" required>
+<option value="">Selecione o serviço desejado</option>
+<option>Impressão de documentos</option><option>Cópias e Xerox</option><option>Encadernação</option><option>Cartões de visita</option><option>Panfletos e flyers</option><option>Plastificação</option><option>Banners e faixas</option><option>Fachadas comerciais</option><option>Adesivos personalizados</option><option>Adesivação</option><option>Placas e letreiros</option><option>Comunicação visual</option><option>Outro serviço</option>
+</select>
+<input type="text" id="quantidade" placeholder="Quantidade ou dimensões (opcional)">
+<textarea id="mensagem" placeholder="Descreva o que você precisa e informe os detalhes do seu projeto..."></textarea>
+<button type="submit" class="btn">Enviar orçamento pelo WhatsApp</button>
+<p class="form-aviso">Ao clicar, você será direcionado ao WhatsApp para enviar sua solicitação.</p>
+</form>
+</div>
+</div>
+</section>
+
+<section id="contato">
+<div class="container">
+<div class="section-title"><span>Fale conosco</span><h2>Entre em contato</h2><p>Estamos prontos para conhecer seu projeto e ajudar a encontrar a melhor solução.</p></div>
+<div class="contato-grid">
+<div class="contato-info">
+<h3>Copiadora Amazonas</h3>
+<p><strong>📍 Endereço:</strong><br><a href="https://www.google.com/maps/search/?api=1&query=Rua+Gr%C3%A3o+Mogol%2C+16%2C+Centro%2C+Montes+Claros%2C+MG" target="_blank" rel="noopener noreferrer">Rua Grão Mogol, nº 16, Centro, Montes Claros – MG<br><strong>Ver rota no Google Maps →</strong></a></p>
+<p><strong>☎️ Telefone fixo:</strong><br><a href="tel:+553832153620">(38) 3215-3620</a></p>
+<p><strong>📱 WhatsApp:</strong><br><a href="https://wa.me/5538988479061" target="_blank" rel="noopener noreferrer">(38) 98847-9061</a></p>
+<p><strong>📷 Instagram:</strong><br>Instagram: adicionar o perfil oficial da empresa</p>
+<p><strong>🕒 Horário de atendimento:</strong><br>Consulte os horários pelo WhatsApp.</p>
+<a href="#orcamento" class="btn">Solicitar orçamento</a>
+</div>
+<div class="mapa" style="padding:0;overflow:hidden;min-height:340px"><iframe title="Localização da Copiadora Amazonas no Google Maps" src="https://www.google.com/maps?q=Rua+Gr%C3%A3o+Mogol,+16,+Centro,+Montes+Claros,+MG&output=embed" width="100%" height="340" style="border:0;border-radius:17px" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-content">
+<div><img src="logo.jpg" class="footer-logo" alt="Copiadora Amazonas"><p>Gráfica rápida, copiadora e comunicação visual. Soluções para transformar suas ideias em realidade e valorizar sua marca.</p></div>
+<div class="footer-links"><h3>Menu</h3><a href="#inicio">Início</a><a href="#sobre">Quem somos</a><a href="#grafica">Gráfica e copiadora</a><a href="#visual">Comunicação visual</a><a href="#contato">Contato</a></div>
+<div class="footer-links"><h3>Atendimento</h3><a href="#orcamento">Solicitar orçamento</a><a href="#contato">Localização</a><a href="#contato">Fale conosco</a></div>
+</div>
+<div class="footer-bottom">© 2026 Copiadora Amazonas. Todos os direitos reservados.<br><br>Desenvolvido por <strong>Next Leads</strong>.</div>
+</div>
+</footer>
+
+<a href="https://wa.me/5538988479061" class="whatsapp" id="whatsappFlutuante" target="_blank" rel="noopener noreferrer" aria-label="Fale com a Copiadora Amazonas pelo WhatsApp">
+<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 .5C7.44.5.5 7.43.5 16c0 2.73.72 5.4 2.1 7.76L.5 31.5l7.93-2.08A15.45 15.45 0 0 0 16 31c8.56 0 15.5-6.94 15.5-15S24.56.5 16 .5zm0 27.82c-2.35 0-4.66-.63-6.68-1.83l-.48-.29-4.7 1.23 1.25-4.58-.32-.5A12.8 12.8 0 0 1 3.1 16C3.1 8.87 8.88 3.1 16 3.1S28.9 8.87 28.9 16 23.12 28.32 16 28.32zm7.04-9.59c-.39-.2-2.3-1.13-2.66-1.26-.36-.13-.62-.2-.88.2-.26.39-1.01 1.26-1.24 1.52-.23.26-.46.29-.85.1-.39-.2-1.64-.61-3.12-1.93-1.15-1.03-1.93-2.3-2.16-2.69-.23-.39-.02-.6.17-.79.18-.18.39-.46.59-.69.2-.23.26-.39.39-.65.13-.26.07-.49-.03-.69-.1-.2-.88-2.11-1.21-2.89-.32-.76-.65-.66-.88-.67h-.75c-.26 0-.69.1-1.05.49-.36.39-1.38 1.35-1.38 3.29 0 1.94 1.41 3.81 1.6 4.07.2.26 2.77 4.23 6.71 5.93.94.4 1.67.65 2.24.83.94.3 1.8.26 2.47.16.75-.11 2.3-.94 2.63-1.85.33-.91.33-1.69.23-1.85-.1-.16-.36-.26-.75-.46z"/></svg>
+</a>
+
+<script>
+/* WhatsApp oficial da Copiadora Amazonas: DDI + DDD + número, somente números. */
+const numeroWhatsApp = "5538988479061";
+
+document.getElementById("whatsappFlutuante").href =
+    "https://wa.me/" + numeroWhatsApp;
+
+function toggleMenu() {
+    const menu = document.getElementById("menu");
+    const botao = document.querySelector(".menu-toggle");
+    menu.classList.toggle("active");
+    botao.setAttribute("aria-expanded", menu.classList.contains("active"));
+}
+
+function closeMenu() {
+    document.getElementById("menu").classList.remove("active");
+    document.querySelector(".menu-toggle").setAttribute("aria-expanded", "false");
+}
+
+document.getElementById("formOrcamento").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById("nome").value.trim();
+    const telefone = document.getElementById("telefone").value.trim();
+    const servico = document.getElementById("servico").value;
+    const quantidade = document.getElementById("quantidade").value.trim();
+    const mensagem = document.getElementById("mensagem").value.trim();
+
+    if (!nome || !telefone || !servico) {
+        alert("Preencha os campos obrigatórios.");
+        return;
+    }
+
+    const texto =
+        "Olá! Gostaria de solicitar um orçamento na Copiadora Amazonas.\n\n" +
+        "Nome: " + nome + "\n" +
+        "Telefone: " + telefone + "\n" +
+        "Serviço desejado: " + servico + "\n" +
+        "Quantidade/dimensões: " + (quantidade || "Não informado") + "\n" +
+        "Descrição: " + (mensagem || "Não informado");
+
+    const linkWhatsApp =
+        "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(texto);
+
+    window.open(linkWhatsApp, "_blank");
+});
+</script>
+
+</body>
+</html>
